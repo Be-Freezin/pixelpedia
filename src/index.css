@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--primary-black: #09090b;
+	--primary-white: #fbfbff;
+
+	--primary-cyan: #3bf4fb;
+	--primary-green: #c8dd46;
+
+	--purple-900: #1d1c22;
+	--purple-800: #26252d;
+	--purple-700: #393743;
+	--purple-600: #4c495a;
+	--purple-500: #605c70;
+	--purple-400: #736e87;
+	--purple-300: #88849A;
+	--purple-200: #9d9aac;
+}
