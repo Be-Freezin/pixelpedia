@@ -28,6 +28,7 @@ function useFetch(endpoint) {
 				const response = await axios.get(`${BASE_URL}/${endpoint}`, {
 					params: {
 						key: API_KEY,
+						page_size: 40
 					},
 				})
 				setData(response.data)

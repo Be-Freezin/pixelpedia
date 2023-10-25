@@ -6,10 +6,10 @@ function App() {
   
 
   return (
-    <div>
-      <Gamelist />
-    </div>
-  )
+		<div className='text-primary-text bg-primary-surface h-full font-poppins'>
+			<Gamelist />
+		</div>
+	)
 }
 
 export default App
