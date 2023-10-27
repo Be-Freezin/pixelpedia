@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useMemo} from 'react'
 
 const GameCard = ({
 	id,
@@ -12,6 +12,12 @@ const GameCard = ({
 	clip,
 	tags,
 }) => {
+
+	const scoreBgColor = useMemo(() => {
+		if (score >= 80) return 'bg-lime-500'
+		if (score < 80) return 'bg-orange-500'
+		if (score < 30) return 'bg-red-500'
+	},[score])
 	
 	return (
 		<div>
@@ -26,7 +32,7 @@ const GameCard = ({
 				/>
 				<div className='flex items-start justify-between'>
 					<h2 className='font-extrabold text-xl'>{name}</h2>
-					<div className={`bg-lime-500 px-2 py-1 border-2 border-primary-border rounded-md text-score-text font-bold`}>
+					<div className={`bg-lime-500 px-2 py-1 border-2 border-primary-border rounded-md text-score-text font-bold ${scoreBgColor}`}>
 						<span>{score}</span>
 					</div>
 				</div>
