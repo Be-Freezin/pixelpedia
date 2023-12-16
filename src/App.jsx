@@ -6,7 +6,7 @@ function App() {
   
 
   return (
-		<div className='text-primary-text bg-primary-surface h-full font-poppins'>
+		<div className='text-primary-text bg-primary-surface  font-poppins'>
 			<Gamelist />
 		</div>
 	)

@@ -8,7 +8,7 @@ const Gamelist = () => {
 	if (error) return <p>Error loading data!</p>
 
 	return (
-		<div className='bg-primary-surface grid grid-cols-4 grid-rows-4 gap-y-4 '>
+		<div className='bg-primary-surface grid grid-cols-4 grid-rows-4 gap-y-4 items-center '>
 			{data.results.map((game) => (
 				<GameCard
 					key={game.id}
